@@ -1,0 +1,6 @@
+framework module Pods_WLWCutPhoto {
+  umbrella header "Pods-WLWCutPhoto-umbrella.h"
+
+  export *
+  module * { export * }
+}

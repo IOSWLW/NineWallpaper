@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A60C8441F63A8D6008D4745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8431F63A8D6008D4745 /* main.m */; };
+		2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8461F63A8D6008D4745 /* AppDelegate.m */; };
+		2A60C84F1F63A8D6008D4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C84E1F63A8D6008D4745 /* Assets.xcassets */; };
+		2A60C85D1F63A8D6008D4745 /* WLWCutPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C85C1F63A8D6008D4745 /* WLWCutPhotoTests.m */; };
+		2A60C8681F63A8D6008D4745 /* WLWCutPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8671F63A8D6008D4745 /* WLWCutPhotoUITests.m */; };
+		2A60C8841F63B825008D4745 /* WLWLaunchScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8821F63B825008D4745 /* WLWLaunchScreenVC.m */; };
+		2A60C8851F63B825008D4745 /* WLWLaunchScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C8831F63B825008D4745 /* WLWLaunchScreenVC.xib */; };
+		2A60C8871F63B960008D4745 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C8861F63B960008D4745 /* LaunchScreen.xib */; };
+		2A60C89C1F6412A6008D4745 /* WLWNetImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C89A1F6412A6008D4745 /* WLWNetImageVC.m */; };
+		2A60C89D1F6412A6008D4745 /* WLWNetImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C89B1F6412A6008D4745 /* WLWNetImageVC.xib */; };
+		2A60C9D11F64192F008D4745 /* Shimmer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60C9CF1F64192F008D4745 /* Shimmer.framework */; };
+		2A60C9D71F641959008D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60C9D61F641959008D4745 /* Foundation.framework */; };
+		2A60C9D91F64197B008D4745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60C9D81F64197B008D4745 /* CoreGraphics.framework */; };
+		2A60C9E31F6419FA008D4745 /* HUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C9DC1F6419FA008D4745 /* HUTransitionAnimator.m */; };
+		2A60C9E41F6419FA008D4745 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C9DE1F6419FA008D4745 /* HUTransitionGhostAnimator.m */; };
+		2A60C9E51F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C9E01F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m */; };
+		2A60C9E61F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C9E21F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.m */; };
+		2A60C9EB1F641A1F008D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60C9D41F641943008D4745 /* UIKit.framework */; };
+		2A60C9ED1F641A1F008D4745 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A60C9CE1F64192F008D4745 /* AFNetworking.framework */; };
+		2A60C9F11F641A1F008D4745 /* Pods_WLWCutPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC611A35A098A67ECEB36F09 /* Pods_WLWCutPhoto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A60C8591F63A8D6008D4745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A60C8371F63A8D6008D4745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A60C83E1F63A8D6008D4745;
+			remoteInfo = WLWCutPhoto;
+		};
+		2A60C8641F63A8D6008D4745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A60C8371F63A8D6008D4745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A60C83E1F63A8D6008D4745;
+			remoteInfo = WLWCutPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A60C83F1F63A8D6008D4745 /* WLWCutPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLWCutPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A60C8431F63A8D6008D4745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A60C8451F63A8D6008D4745 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A60C8461F63A8D6008D4745 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A60C84E1F63A8D6008D4745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A60C8531F63A8D6008D4745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A60C8581F63A8D6008D4745 /* WLWCutPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLWCutPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A60C85C1F63A8D6008D4745 /* WLWCutPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLWCutPhotoTests.m; sourceTree = "<group>"; };
+		2A60C85E1F63A8D6008D4745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A60C8631F63A8D6008D4745 /* WLWCutPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLWCutPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A60C8671F63A8D6008D4745 /* WLWCutPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLWCutPhotoUITests.m; sourceTree = "<group>"; };
+		2A60C8691F63A8D6008D4745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A60C8811F63B825008D4745 /* WLWLaunchScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWLaunchScreenVC.h; sourceTree = "<group>"; };
+		2A60C8821F63B825008D4745 /* WLWLaunchScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWLaunchScreenVC.m; sourceTree = "<group>"; };
+		2A60C8831F63B825008D4745 /* WLWLaunchScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLWLaunchScreenVC.xib; sourceTree = "<group>"; };
+		2A60C8861F63B960008D4745 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		2A60C8991F6412A6008D4745 /* WLWNetImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWNetImageVC.h; sourceTree = "<group>"; };
+		2A60C89A1F6412A6008D4745 /* WLWNetImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWNetImageVC.m; sourceTree = "<group>"; };
+		2A60C89B1F6412A6008D4745 /* WLWNetImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLWNetImageVC.xib; sourceTree = "<group>"; };
+		2A60C9CE1F64192F008D4745 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../Library/Developer/Xcode/DerivedData/WLWCutPhoto-gmysoijhhrnvnogsnnoiungssdbx/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		2A60C9CF1F64192F008D4745 /* Shimmer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Shimmer.framework; path = "../../../Library/Developer/Xcode/DerivedData/WLWCutPhoto-gmysoijhhrnvnogsnnoiungssdbx/Build/Products/Debug-iphonesimulator/Shimmer/Shimmer.framework"; sourceTree = "<group>"; };
+		2A60C9D41F641943008D4745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A60C9D61F641959008D4745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A60C9D81F64197B008D4745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A60C9DB1F6419FA008D4745 /* HUTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionAnimator.h; sourceTree = "<group>"; };
+		2A60C9DC1F6419FA008D4745 /* HUTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionAnimator.m; sourceTree = "<group>"; };
+		2A60C9DD1F6419FA008D4745 /* HUTransitionGhostAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionGhostAnimator.h; sourceTree = "<group>"; };
+		2A60C9DE1F6419FA008D4745 /* HUTransitionGhostAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionGhostAnimator.m; sourceTree = "<group>"; };
+		2A60C9DF1F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionHorizontalLinesAnimator.h; sourceTree = "<group>"; };
+		2A60C9E01F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
+		2A60C9E11F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
+		2A60C9E21F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
+		CB1F148D0008F8F2654BD22A /* Pods-WLWCutPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLWCutPhoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto.release.xcconfig"; sourceTree = "<group>"; };
+		E94D3065885C9BAD822530E8 /* Pods-WLWCutPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLWCutPhoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto.debug.xcconfig"; sourceTree = "<group>"; };
+		FC611A35A098A67ECEB36F09 /* Pods_WLWCutPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLWCutPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A60C83C1F63A8D6008D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A60C9D91F64197B008D4745 /* CoreGraphics.framework in Frameworks */,
+				2A60C9ED1F641A1F008D4745 /* AFNetworking.framework in Frameworks */,
+				2A60C9EB1F641A1F008D4745 /* UIKit.framework in Frameworks */,
+				2A60C9D71F641959008D4745 /* Foundation.framework in Frameworks */,
+				2A60C9F11F641A1F008D4745 /* Pods_WLWCutPhoto.framework in Frameworks */,
+				2A60C9D11F64192F008D4745 /* Shimmer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C8551F63A8D6008D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C8601F63A8D6008D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA44811C580B9ABC1095CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E94D3065885C9BAD822530E8 /* Pods-WLWCutPhoto.debug.xcconfig */,
+				CB1F148D0008F8F2654BD22A /* Pods-WLWCutPhoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A60C8361F63A8D6008D4745 = {
+			isa = PBXGroup;
+			children = (
+				2A60C88B1F641225008D4745 /* Vendors */,
+				2A60C8411F63A8D6008D4745 /* WLWCutPhoto */,
+				2A60C85B1F63A8D6008D4745 /* WLWCutPhotoTests */,
+				2A60C8661F63A8D6008D4745 /* WLWCutPhotoUITests */,
+				2A60C8401F63A8D6008D4745 /* Products */,
+				0FA44811C580B9ABC1095CB6 /* Pods */,
+				F6B14BCF43C7463EE66E5591 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A60C8401F63A8D6008D4745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C83F1F63A8D6008D4745 /* WLWCutPhoto.app */,
+				2A60C8581F63A8D6008D4745 /* WLWCutPhotoTests.xctest */,
+				2A60C8631F63A8D6008D4745 /* WLWCutPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A60C8411F63A8D6008D4745 /* WLWCutPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C8451F63A8D6008D4745 /* AppDelegate.h */,
+				2A60C8461F63A8D6008D4745 /* AppDelegate.m */,
+				2A60C8811F63B825008D4745 /* WLWLaunchScreenVC.h */,
+				2A60C8821F63B825008D4745 /* WLWLaunchScreenVC.m */,
+				2A60C8831F63B825008D4745 /* WLWLaunchScreenVC.xib */,
+				2A60C8991F6412A6008D4745 /* WLWNetImageVC.h */,
+				2A60C89A1F6412A6008D4745 /* WLWNetImageVC.m */,
+				2A60C89B1F6412A6008D4745 /* WLWNetImageVC.xib */,
+				2A60C84E1F63A8D6008D4745 /* Assets.xcassets */,
+				2A60C8861F63B960008D4745 /* LaunchScreen.xib */,
+				2A60C8531F63A8D6008D4745 /* Info.plist */,
+				2A60C8421F63A8D6008D4745 /* Supporting Files */,
+			);
+			path = WLWCutPhoto;
+			sourceTree = "<group>";
+		};
+		2A60C8421F63A8D6008D4745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C8431F63A8D6008D4745 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A60C85B1F63A8D6008D4745 /* WLWCutPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C85C1F63A8D6008D4745 /* WLWCutPhotoTests.m */,
+				2A60C85E1F63A8D6008D4745 /* Info.plist */,
+			);
+			path = WLWCutPhotoTests;
+			sourceTree = "<group>";
+		};
+		2A60C8661F63A8D6008D4745 /* WLWCutPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C8671F63A8D6008D4745 /* WLWCutPhotoUITests.m */,
+				2A60C8691F63A8D6008D4745 /* Info.plist */,
+			);
+			path = WLWCutPhotoUITests;
+			sourceTree = "<group>";
+		};
+		2A60C88B1F641225008D4745 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C9DA1F6419FA008D4745 /* HUAnimator */,
+			);
+			name = Vendors;
+			path = WLWCutPhoto/Vendors;
+			sourceTree = "<group>";
+		};
+		2A60C9DA1F6419FA008D4745 /* HUAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C9DB1F6419FA008D4745 /* HUTransitionAnimator.h */,
+				2A60C9DC1F6419FA008D4745 /* HUTransitionAnimator.m */,
+				2A60C9DD1F6419FA008D4745 /* HUTransitionGhostAnimator.h */,
+				2A60C9DE1F6419FA008D4745 /* HUTransitionGhostAnimator.m */,
+				2A60C9DF1F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.h */,
+				2A60C9E01F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m */,
+				2A60C9E11F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.h */,
+				2A60C9E21F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.m */,
+			);
+			path = HUAnimator;
+			sourceTree = "<group>";
+		};
+		F6B14BCF43C7463EE66E5591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A60C9D81F64197B008D4745 /* CoreGraphics.framework */,
+				2A60C9D61F641959008D4745 /* Foundation.framework */,
+				2A60C9D41F641943008D4745 /* UIKit.framework */,
+				2A60C9CE1F64192F008D4745 /* AFNetworking.framework */,
+				2A60C9CF1F64192F008D4745 /* Shimmer.framework */,
+				FC611A35A098A67ECEB36F09 /* Pods_WLWCutPhoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A60C83E1F63A8D6008D4745 /* WLWCutPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A60C86C1F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhoto" */;
+			buildPhases = (
+				B38ED3CD16F917BD1BF78188 /* [CP] Check Pods Manifest.lock */,
+				2A60C83B1F63A8D6008D4745 /* Sources */,
+				2A60C83C1F63A8D6008D4745 /* Frameworks */,
+				2A60C83D1F63A8D6008D4745 /* Resources */,
+				475F680CF0B55FBA278128DE /* [CP] Embed Pods Frameworks */,
+				CA7ED718E05DFD617A633019 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLWCutPhoto;
+			productName = WLWCutPhoto;
+			productReference = 2A60C83F1F63A8D6008D4745 /* WLWCutPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A60C8571F63A8D6008D4745 /* WLWCutPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A60C86F1F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhotoTests" */;
+			buildPhases = (
+				2A60C8541F63A8D6008D4745 /* Sources */,
+				2A60C8551F63A8D6008D4745 /* Frameworks */,
+				2A60C8561F63A8D6008D4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A60C85A1F63A8D6008D4745 /* PBXTargetDependency */,
+			);
+			name = WLWCutPhotoTests;
+			productName = WLWCutPhotoTests;
+			productReference = 2A60C8581F63A8D6008D4745 /* WLWCutPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A60C8621F63A8D6008D4745 /* WLWCutPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A60C8721F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhotoUITests" */;
+			buildPhases = (
+				2A60C85F1F63A8D6008D4745 /* Sources */,
+				2A60C8601F63A8D6008D4745 /* Frameworks */,
+				2A60C8611F63A8D6008D4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A60C8651F63A8D6008D4745 /* PBXTargetDependency */,
+			);
+			name = WLWCutPhotoUITests;
+			productName = WLWCutPhotoUITests;
+			productReference = 2A60C8631F63A8D6008D4745 /* WLWCutPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A60C8371F63A8D6008D4745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "汪理伟";
+				TargetAttributes = {
+					2A60C83E1F63A8D6008D4745 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XF3YQ44D57;
+						ProvisioningStyle = Automatic;
+					};
+					2A60C8571F63A8D6008D4745 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A60C83E1F63A8D6008D4745;
+					};
+					2A60C8621F63A8D6008D4745 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A60C83E1F63A8D6008D4745;
+					};
+				};
+			};
+			buildConfigurationList = 2A60C83A1F63A8D6008D4745 /* Build configuration list for PBXProject "WLWCutPhoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A60C8361F63A8D6008D4745;
+			productRefGroup = 2A60C8401F63A8D6008D4745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A60C83E1F63A8D6008D4745 /* WLWCutPhoto */,
+				2A60C8571F63A8D6008D4745 /* WLWCutPhotoTests */,
+				2A60C8621F63A8D6008D4745 /* WLWCutPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A60C83D1F63A8D6008D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A60C8851F63B825008D4745 /* WLWLaunchScreenVC.xib in Resources */,
+				2A60C8871F63B960008D4745 /* LaunchScreen.xib in Resources */,
+				2A60C84F1F63A8D6008D4745 /* Assets.xcassets in Resources */,
+				2A60C89D1F6412A6008D4745 /* WLWNetImageVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C8561F63A8D6008D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C8611F63A8D6008D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		475F680CF0B55FBA278128DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shimmer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38ED3CD16F917BD1BF78188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLWCutPhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA7ED718E05DFD617A633019 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A60C83B1F63A8D6008D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A60C9E41F6419FA008D4745 /* HUTransitionGhostAnimator.m in Sources */,
+				2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */,
+				2A60C9E51F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
+				2A60C8441F63A8D6008D4745 /* main.m in Sources */,
+				2A60C9E31F6419FA008D4745 /* HUTransitionAnimator.m in Sources */,
+				2A60C8841F63B825008D4745 /* WLWLaunchScreenVC.m in Sources */,
+				2A60C9E61F6419FA008D4745 /* HUTransitionVerticalLinesAnimator.m in Sources */,
+				2A60C89C1F6412A6008D4745 /* WLWNetImageVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C8541F63A8D6008D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A60C85D1F63A8D6008D4745 /* WLWCutPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60C85F1F63A8D6008D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A60C8681F63A8D6008D4745 /* WLWCutPhotoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A60C85A1F63A8D6008D4745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A60C83E1F63A8D6008D4745 /* WLWCutPhoto */;
+			targetProxy = 2A60C8591F63A8D6008D4745 /* PBXContainerItemProxy */;
+		};
+		2A60C8651F63A8D6008D4745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A60C83E1F63A8D6008D4745 /* WLWCutPhoto */;
+			targetProxy = 2A60C8641F63A8D6008D4745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A60C86A1F63A8D6008D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A60C86B1F63A8D6008D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A60C86D1F63A8D6008D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94D3065885C9BAD822530E8 /* Pods-WLWCutPhoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XF3YQ44D57;
+				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A60C86E1F63A8D6008D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1F148D0008F8F2654BD22A /* Pods-WLWCutPhoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XF3YQ44D57;
+				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A60C8701F63A8D6008D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WLWCutPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLWCutPhoto.app/WLWCutPhoto";
+			};
+			name = Debug;
+		};
+		2A60C8711F63A8D6008D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WLWCutPhotoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WLWCutPhoto.app/WLWCutPhoto";
+			};
+			name = Release;
+		};
+		2A60C8731F63A8D6008D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WLWCutPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WLWCutPhoto;
+			};
+			name = Debug;
+		};
+		2A60C8741F63A8D6008D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WLWCutPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WLWCutPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A60C83A1F63A8D6008D4745 /* Build configuration list for PBXProject "WLWCutPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A60C86A1F63A8D6008D4745 /* Debug */,
+				2A60C86B1F63A8D6008D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A60C86C1F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A60C86D1F63A8D6008D4745 /* Debug */,
+				2A60C86E1F63A8D6008D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A60C86F1F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A60C8701F63A8D6008D4745 /* Debug */,
+				2A60C8711F63A8D6008D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A60C8721F63A8D6008D4745 /* Build configuration list for PBXNativeTarget "WLWCutPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A60C8731F63A8D6008D4745 /* Debug */,
+				2A60C8741F63A8D6008D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A60C8371F63A8D6008D4745 /* Project object */;
+}
