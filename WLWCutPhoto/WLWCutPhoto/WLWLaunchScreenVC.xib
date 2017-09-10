@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLWLaunchScreenVC">
             <connections>
+                <outlet property="LogoView" destination="uOt-HH-qZj" id="iIN-U7-qVg"/>
                 <outlet property="shimmeringView" destination="CGM-hs-8yB" id="1zi-tq-Byh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,22 +27,34 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGM-hs-8yB" customClass="FBShimmeringView">
                     <rect key="frame" x="0.0" y="520" width="375" height="76"/>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-HH-qZj">
+                    <rect key="frame" x="134" y="-128" width="106" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="3Z1-xu-hyd"/>
+                        <constraint firstAttribute="height" constant="128" id="bQ4-aq-rIO"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="hv3-N5-zVg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1kO-rQ-9g4"/>
                 <constraint firstItem="CGM-hs-8yB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2SR-Yg-oAf"/>
+                <constraint firstItem="uOt-HH-qZj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="134.5" id="33B-qC-L5K"/>
                 <constraint firstItem="hv3-N5-zVg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7sn-4n-vuK"/>
                 <constraint firstItem="CGM-hs-8yB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="520" id="MTA-d4-sZt"/>
                 <constraint firstAttribute="bottom" secondItem="CGM-hs-8yB" secondAttribute="bottom" constant="71" id="PEc-o5-PVS"/>
                 <constraint firstAttribute="trailing" secondItem="hv3-N5-zVg" secondAttribute="trailing" id="Q7j-IT-J0H"/>
+                <constraint firstItem="uOt-HH-qZj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QSR-Rj-bkC"/>
+                <constraint firstAttribute="trailing" secondItem="uOt-HH-qZj" secondAttribute="trailing" constant="134.5" id="bDk-s8-VNG"/>
                 <constraint firstAttribute="bottom" secondItem="hv3-N5-zVg" secondAttribute="bottom" id="dWM-WE-COg"/>
                 <constraint firstAttribute="trailing" secondItem="CGM-hs-8yB" secondAttribute="trailing" id="em0-YF-yUN"/>
+                <constraint firstItem="uOt-HH-qZj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-128" id="oXL-tc-Lgl"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
     <resources>
         <image name="Launch" width="375" height="668"/>
+        <image name="Logo" width="106" height="155"/>
     </resources>
 </document>

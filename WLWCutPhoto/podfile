@@ -4,4 +4,5 @@ target 'WLWCutPhoto' do
   use_frameworks!
   pod 'Shimmer', '~> 1.0’
   pod 'AFNetworking', '~> 3.0'
+pod 'JHChainableAnimations', '~> 2.0'
 end

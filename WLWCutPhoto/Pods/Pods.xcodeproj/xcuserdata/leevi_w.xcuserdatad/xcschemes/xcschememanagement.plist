@@ -8,32 +8,36 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>JHChainableAnimations.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-WLWCutPhoto.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Shimmer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>524F7950684CA4441435842DFB7D776A</key>
+		<key>1DE69D7E92101C5F09996690DBBDE3E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B4741492DABC53CEA21FC88412072BA</key>
+		<key>282312974554B9A5BD0411335050813B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C2E26A389CC33F951F99E839D74A3AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

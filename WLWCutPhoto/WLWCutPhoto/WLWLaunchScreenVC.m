@@ -10,10 +10,12 @@
 #import "FBShimmeringView.h"
 #import "HUTransitionAnimator.h"
 #import "WLWNetImageVC.h"
+#import <JHChainableAnimations/JHChainableAnimations.h>
 
 @interface WLWLaunchScreenVC () <UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet FBShimmeringView *shimmeringView;
+@property (weak, nonatomic) IBOutlet UIImageView *LogoView;
 
 @end
 
@@ -24,7 +26,7 @@
     // Do any additional setup after loading the view from its nib.
     UILabel *logoLabel = [[UILabel alloc] initWithFrame:_shimmeringView.bounds];
     logoLabel.text = @"Shimmer";
-    logoLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:40];
+    logoLabel.font = [UIFont fontWithName:@"Zapfino" size:25];
     logoLabel.textColor = [UIColor whiteColor];
     logoLabel.textAlignment = NSTextAlignmentCenter;
     logoLabel.backgroundColor = [UIColor clearColor];
@@ -34,22 +36,24 @@
     _shimmeringView.shimmering = YES;
     _shimmeringView.shimmeringBeginFadeDuration = 0.2;
     _shimmeringView.shimmeringOpacity = 0.2;
+    _shimmeringView.shimmeringAnimationOpacity = 0.7;
     self.navigationController.delegate = self;
+    [self animationLogo];
     [self pushToMainVC];
+}
+
+- (void)animationLogo {
+    JHChainableAnimator *animator = [[JHChainableAnimator alloc] initWithView:self.LogoView];
+    animator.moveY(258).spring.thenAfter(2.0).bounce.animate(4);
 }
 
 - (void)pushToMainVC {
     WLWNetImageVC *netImageVC = [[WLWNetImageVC alloc] init];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView transitionWithView:[UIApplication sharedApplication].keyWindow duration:0.2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
             [self.navigationController pushViewController:netImageVC animated:YES];
         } completion:nil];
     });
-
-}
-
-- (void)dismissByShowingController:(UIViewController *)controller {
-//    [UIApplication sharedApplication].keyWindow.rootViewController = controller;
 }
 
 #pragma mark - UINavigationControllerDelegate
