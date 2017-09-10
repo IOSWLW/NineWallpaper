@@ -7,6 +7,7 @@
 //
 
 #import "WLWNetImageVC.h"
+#import "WLWImagePhoto.h"
 
 @interface WLWNetImageVC ()
 
@@ -17,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [WLWImagePhoto requestPhotosWithParams:@"" callback:^(WLWImagePhoto *photos, NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

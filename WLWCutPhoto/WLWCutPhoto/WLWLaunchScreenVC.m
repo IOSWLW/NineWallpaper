@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet FBShimmeringView *shimmeringView;
 @property (weak, nonatomic) IBOutlet UIImageView *LogoView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *loagTopLayout;
 
 @end
 
@@ -43,6 +44,7 @@
 }
 
 - (void)animationLogo {
+    _loagTopLayout.active = NO;
     JHChainableAnimator *animator = [[JHChainableAnimator alloc] initWithView:self.LogoView];
     animator.moveY(258).spring.thenAfter(2.0).bounce.animate(4);
 }

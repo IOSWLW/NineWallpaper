@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2022CB1F64DAB90069C62F /* WLWNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2022CA1F64DAB90069C62F /* WLWNetworkRequest.m */; };
+		2A2027D31F64F3590069C62F /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2027D21F64F3590069C62F /* Mantle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2A2027D71F64F3E50069C62F /* WLWImagePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2027D61F64F3E50069C62F /* WLWImagePhoto.m */; };
+		2A2027DA1F65105D0069C62F /* WLWHitPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2027D91F65105D0069C62F /* WLWHitPhoto.m */; };
+		2A2027DB1F65144D0069C62F /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2027D21F64F3590069C62F /* Mantle.framework */; };
+		2A2027DC1F65144D0069C62F /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2027D21F64F3590069C62F /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A60C8441F63A8D6008D4745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8431F63A8D6008D4745 /* main.m */; };
 		2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8461F63A8D6008D4745 /* AppDelegate.m */; };
 		2A60C84F1F63A8D6008D4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C84E1F63A8D6008D4745 /* Assets.xcassets */; };
@@ -46,7 +52,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A2027DD1F65144D0069C62F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A2027DC1F65144D0069C62F /* Mantle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A2022C91F64DAB90069C62F /* WLWNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWNetworkRequest.h; sourceTree = "<group>"; };
+		2A2022CA1F64DAB90069C62F /* WLWNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWNetworkRequest.m; sourceTree = "<group>"; };
+		2A2022CC1F64DCCE0069C62F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2A2027D21F64F3590069C62F /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mantle.framework; sourceTree = "<group>"; };
+		2A2027D51F64F3E50069C62F /* WLWImagePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWImagePhoto.h; sourceTree = "<group>"; };
+		2A2027D61F64F3E50069C62F /* WLWImagePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWImagePhoto.m; sourceTree = "<group>"; };
+		2A2027D81F65105D0069C62F /* WLWHitPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWHitPhoto.h; sourceTree = "<group>"; };
+		2A2027D91F65105D0069C62F /* WLWHitPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWHitPhoto.m; sourceTree = "<group>"; };
 		2A60C83F1F63A8D6008D4745 /* WLWCutPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLWCutPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A60C8431F63A8D6008D4745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A60C8451F63A8D6008D4745 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,8 +119,10 @@
 			files = (
 				2A60C9D91F64197B008D4745 /* CoreGraphics.framework in Frameworks */,
 				2A60C9ED1F641A1F008D4745 /* AFNetworking.framework in Frameworks */,
+				2A2027D31F64F3590069C62F /* Mantle.framework in Frameworks */,
 				2A60C9EB1F641A1F008D4745 /* UIKit.framework in Frameworks */,
 				2A60C9D71F641959008D4745 /* Foundation.framework in Frameworks */,
+				2A2027DB1F65144D0069C62F /* Mantle.framework in Frameworks */,
 				2A60C9F11F641A1F008D4745 /* Pods_WLWCutPhoto.framework in Frameworks */,
 				2A60C9D11F64192F008D4745 /* Shimmer.framework in Frameworks */,
 			);
@@ -124,6 +154,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2A2022C61F64DA260069C62F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2A2022C91F64DAB90069C62F /* WLWNetworkRequest.h */,
+				2A2022CA1F64DAB90069C62F /* WLWNetworkRequest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2A2027D11F64F34B0069C62F /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				2A2027D21F64F3590069C62F /* Mantle.framework */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		2A2027D41F64F37C0069C62F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A2027D51F64F3E50069C62F /* WLWImagePhoto.h */,
+				2A2027D61F64F3E50069C62F /* WLWImagePhoto.m */,
+				2A2027D81F65105D0069C62F /* WLWHitPhoto.h */,
+				2A2027D91F65105D0069C62F /* WLWHitPhoto.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2A60C8361F63A8D6008D4745 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +208,8 @@
 		2A60C8411F63A8D6008D4745 /* WLWCutPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				2A2027D41F64F37C0069C62F /* Model */,
+				2A2022C61F64DA260069C62F /* Network */,
 				2A60C8451F63A8D6008D4745 /* AppDelegate.h */,
 				2A60C8461F63A8D6008D4745 /* AppDelegate.m */,
 				2A60C8811F63B825008D4745 /* WLWLaunchScreenVC.h */,
@@ -162,6 +222,7 @@
 				2A60C8861F63B960008D4745 /* LaunchScreen.xib */,
 				2A60C8531F63A8D6008D4745 /* Info.plist */,
 				2A60C8421F63A8D6008D4745 /* Supporting Files */,
+				2A2022CC1F64DCCE0069C62F /* PrefixHeader.pch */,
 			);
 			path = WLWCutPhoto;
 			sourceTree = "<group>";
@@ -195,6 +256,7 @@
 		2A60C88B1F641225008D4745 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				2A2027D11F64F34B0069C62F /* Mantle */,
 				2A60C9DA1F6419FA008D4745 /* HUAnimator */,
 			);
 			name = Vendors;
@@ -242,6 +304,7 @@
 				2A60C83D1F63A8D6008D4745 /* Resources */,
 				475F680CF0B55FBA278128DE /* [CP] Embed Pods Frameworks */,
 				CA7ED718E05DFD617A633019 /* [CP] Copy Pods Resources */,
+				2A2027DD1F65144D0069C62F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -426,8 +489,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A60C9E41F6419FA008D4745 /* HUTransitionGhostAnimator.m in Sources */,
+				2A2027D71F64F3E50069C62F /* WLWImagePhoto.m in Sources */,
 				2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */,
 				2A60C9E51F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
+				2A2022CB1F64DAB90069C62F /* WLWNetworkRequest.m in Sources */,
+				2A2027DA1F65105D0069C62F /* WLWHitPhoto.m in Sources */,
 				2A60C8441F63A8D6008D4745 /* main.m in Sources */,
 				2A60C9E31F6419FA008D4745 /* HUTransitionAnimator.m in Sources */,
 				2A60C8841F63B825008D4745 /* WLWLaunchScreenVC.m in Sources */,
@@ -564,6 +630,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XF3YQ44D57;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WLWCutPhoto/Vendors/Mantle",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WLWCutPhoto/PrefixHeader.pch";
 				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -578,6 +649,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XF3YQ44D57;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WLWCutPhoto/Vendors/Mantle",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WLWCutPhoto/PrefixHeader.pch";
 				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

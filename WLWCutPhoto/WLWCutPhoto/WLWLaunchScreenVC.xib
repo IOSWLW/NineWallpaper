@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLWLaunchScreenVC">
             <connections>
                 <outlet property="LogoView" destination="uOt-HH-qZj" id="iIN-U7-qVg"/>
+                <outlet property="loagTopLayout" destination="oXL-tc-Lgl" id="gBb-zq-lmH"/>
                 <outlet property="shimmeringView" destination="CGM-hs-8yB" id="1zi-tq-Byh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -39,13 +40,11 @@
             <constraints>
                 <constraint firstItem="hv3-N5-zVg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1kO-rQ-9g4"/>
                 <constraint firstItem="CGM-hs-8yB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2SR-Yg-oAf"/>
-                <constraint firstItem="uOt-HH-qZj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="134.5" id="33B-qC-L5K"/>
                 <constraint firstItem="hv3-N5-zVg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7sn-4n-vuK"/>
                 <constraint firstItem="CGM-hs-8yB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="520" id="MTA-d4-sZt"/>
                 <constraint firstAttribute="bottom" secondItem="CGM-hs-8yB" secondAttribute="bottom" constant="71" id="PEc-o5-PVS"/>
                 <constraint firstAttribute="trailing" secondItem="hv3-N5-zVg" secondAttribute="trailing" id="Q7j-IT-J0H"/>
                 <constraint firstItem="uOt-HH-qZj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QSR-Rj-bkC"/>
-                <constraint firstAttribute="trailing" secondItem="uOt-HH-qZj" secondAttribute="trailing" constant="134.5" id="bDk-s8-VNG"/>
                 <constraint firstAttribute="bottom" secondItem="hv3-N5-zVg" secondAttribute="bottom" id="dWM-WE-COg"/>
                 <constraint firstAttribute="trailing" secondItem="CGM-hs-8yB" secondAttribute="trailing" id="em0-YF-yUN"/>
                 <constraint firstItem="uOt-HH-qZj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-128" id="oXL-tc-Lgl"/>
