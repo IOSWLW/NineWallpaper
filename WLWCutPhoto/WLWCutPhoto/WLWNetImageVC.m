@@ -11,15 +11,21 @@
 #import "WLWPhotoCell.h"
 #import <YYCache/YYCache.h>
 #import <MJRefresh/MJRefresh.h>
+#import "iCarousel.h"
+#import <YYWebImage/YYWebImage.h>
+#import "WLWHitPhoto.h"
 
 static NSString *photoCell = @"WLWPhotoCell";
 
-@interface WLWNetImageVC () <UITableViewDelegate, UITableViewDataSource>
+@interface WLWNetImageVC () <UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) WLWImagePhoto *images;
 @property (strong, nonatomic) NSMutableArray *photos;
 @property (assign, nonatomic) int page;
+@property (nonatomic, strong) IBOutlet iCarousel *carousel;
+@property (strong, nonatomic) NSMutableArray *names;
+
 
 @end
 
@@ -32,65 +38,144 @@ static NSString *photoCell = @"WLWPhotoCell";
     return _photos;
 }
 
+- (NSMutableArray *)names {
+    if (!_names) {
+        _names = [NSMutableArray arrayWithObjects:@"动物",@"植物",@"人",@"背景",@"科技",@"情感"@"动物",@"植物",@"人",@"背景",@"科技",@"情感",@"科技",@"情感",@"情感",nil];
+    }
+    return _names;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configTatbleView];
+    _carousel.vertical = YES;
+    _carousel.type = iCarouselTypeInvertedRotary;
+    NSUInteger index;
+    for (index = 0; index < 14; ++index) {
+        // Setup image name
+        NSString *name = [NSString stringWithFormat:@"image%03ld.jpg", (unsigned long)index];
+        [self.photos addObject:name];
+    }
+    [_carousel reloadData];
+
 }
 
 - (void)configTatbleView {
     [self.tableView registerNib:[UINib nibWithNibName:photoCell bundle:nil] forCellReuseIdentifier:photoCell];
     self.tableView.rowHeight = 210;
-    _page = 1;
     self.tableView.mj_header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
-        [self requestDataSource];
     }];
 
     [self.tableView.mj_header beginRefreshing];
 }
 
-- (void)requestDataSource {
-    [WLWImagePhoto requestPhotosWithParams:[NSString stringWithFormat:@"page=%d",_page] callback:^(WLWImagePhoto *photos, NSError *error) {
-        if (photos) {
-            self.images = photos;
+- (NSInteger)numberOfItemsInCarousel:(__unused iCarousel *)carousel {
+    return _photos.count;
+}
+
+- (NSInteger)numberOfPlaceholdersInCarousel:(__unused iCarousel *)carousel {
+    //note: placeholder views are only displayed on some carousels if wrapping is disabled
+    return 0;
+}
+
+- (UIView *)carousel:(__unused iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view {
+    UIImageView *imageView = nil;
+    UILabel *label = nil;
+    if (view == nil) {
+        view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 375)];
+        label = [[UILabel alloc] initWithFrame:view.bounds];
+        label.backgroundColor = [UIColor clearColor];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.textColor = [UIColor whiteColor];
+        label.font = [label.font fontWithSize:50];
+        imageView = [[UIImageView alloc] initWithFrame:view.bounds];
+        imageView.contentMode = UIViewContentModeRedraw;
+        [view addSubview:imageView];
+        imageView.tag = 1;
+        label.tag = 2;
+        [imageView addSubview:label];
+    }
+    else {
+        imageView = (UIImageView *)[view viewWithTag:1];
+        label = (UILabel *)[view viewWithTag:2];
+    }
+    imageView.image = [UIImage imageNamed:_photos[index]];
+    label.text = self.names[index];
+    return view;
+}
+
+- (CATransform3D)carousel:(__unused iCarousel *)carousel itemTransformForOffset:(CGFloat)offset baseTransform:(CATransform3D)transform {
+    //implement 'flip3D' style carousel
+    transform = CATransform3DRotate(transform, M_PI / 8.0, 0.0, 1.0, 0.0);
+    return CATransform3DTranslate(transform, 0.0, 0.0, offset * self.carousel.itemWidth);
+}
+
+- (CGFloat)carousel:(__unused iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
+{
+    //customize carousel display
+    switch (option)
+    {
+        case iCarouselOptionWrap:
+        {
+            //normally you would hard-code this to YES or NO
+            return YES;
         }
-    }];
+        case iCarouselOptionSpacing:
+        {
+            //add a bit of spacing between the item views
+            return value;
+        }
+        case iCarouselOptionFadeMax:
+        {
+            if (self.carousel.type == iCarouselTypeCustom)
+            {
+                //set opacity based on distance from camera
+                return 0.0;
+            }
+            return value;
+        }
+        case iCarouselOptionShowBackfaces:
+        case iCarouselOptionRadius:
+        case iCarouselOptionAngle:
+        case iCarouselOptionArc:
+        case iCarouselOptionTilt:
+        case iCarouselOptionCount:
+        case iCarouselOptionFadeMin:
+        case iCarouselOptionFadeMinAlpha:
+        case iCarouselOptionFadeRange:
+        case iCarouselOptionOffsetMultiplier:
+        case iCarouselOptionVisibleItems:
+        {
+            return value;
+        }
+    }
 }
 
-- (void)setImages:(WLWImagePhoto *)images {
-    _images = images;
-    [self.photos addObjectsFromArray:_images.hits];
-    [self.tableView reloadData];
-    [self.tableView.mj_header endRefreshing];
+- (IBAction)switchCarouselType {
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Select Carousel Type"
+                                                       delegate:self
+                                              cancelButtonTitle:nil
+                                         destructiveButtonTitle:nil
+                                              otherButtonTitles:nil];
+    for (NSString *title in [self carouselTypes])
+    {
+        [sheet addButtonWithTitle:title];
+    }
+    [sheet showInView:self.view];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (NSArray *)carouselTypes
+{
+    return [NSArray arrayWithObjects:@"Linear", @"Rotary", @"Inverted Rotary", @"Cylinder", @"Inverted Cylinder", @"Wheel", @"Inverted Wheel",  @"CoverFlow", @"CoverFlow2", @"Time Machine", @"Inverted Time Machine", @"Custom", nil];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _photos.count?:10;;
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex >= 0)
+    {
+        _carousel.type = (iCarouselType)buttonIndex;
+//        navItem.title = [[self carouselTypes] objectAtIndex:buttonIndex];
+    }
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WLWPhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:photoCell];
-    cell.photo = _photos[indexPath.row];
-    return cell;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    if (self.displayLink == nil && (-scrollView.contentOffset.y - 64.5) > 0) {
-//        self.jellyView = [[JellyView alloc]initWithFrame:CGRectMake(0, -jellyHeaderHeight , [UIScreen mainScreen].bounds.size.width, jellyHeaderHeight)];
-//        self.jellyView.backgroundColor = [UIColor clearColor];
-//        [self.view insertSubview:self.jellyView aboveSubview:self.tableView];
-//        self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkAction:)];
-//        [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-//    }
-//}
 
 @end

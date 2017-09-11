@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLWNetImageVC">
             <connections>
-                <outlet property="tableView" destination="l6C-9I-etk" id="3F4-0Z-wCS"/>
+                <outlet property="carousel" destination="mm1-en-4YF" id="g6y-xI-UEe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,24 +20,31 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l6C-9I-etk">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-en-4YF" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="n9R-Jh-sIb"/>
-                        <outlet property="delegate" destination="-1" id="h8p-uu-hmU"/>
+                        <outlet property="dataSource" destination="-1" id="4qA-4V-S1n"/>
+                        <outlet property="delegate" destination="-1" id="hTU-YW-58X"/>
                     </connections>
-                </tableView>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45U-Ub-XPz">
+                    <rect key="frame" x="16" y="3" width="116" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="switchCarouselType" destination="-1" eventType="touchUpInside" id="b1H-01-tFe"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="l6C-9I-etk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DpD-Sa-rZ8"/>
-                <constraint firstAttribute="trailing" secondItem="l6C-9I-etk" secondAttribute="trailing" id="ab4-Yu-Ign"/>
-                <constraint firstAttribute="bottom" secondItem="l6C-9I-etk" secondAttribute="bottom" id="cdW-th-Zmo"/>
-                <constraint firstItem="l6C-9I-etk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mYp-uk-4XZ"/>
+                <constraint firstItem="mm1-en-4YF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1jX-iw-oOM"/>
+                <constraint firstAttribute="trailing" secondItem="mm1-en-4YF" secondAttribute="trailing" id="Mdi-Nf-dQx"/>
+                <constraint firstAttribute="bottom" secondItem="mm1-en-4YF" secondAttribute="bottom" id="c5l-PA-J3u"/>
+                <constraint firstItem="mm1-en-4YF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="sxr-dk-cml"/>
             </constraints>
-            <point key="canvasLocation" x="-126" y="1"/>
+            <point key="canvasLocation" x="-125.5" y="27.5"/>
         </view>
     </objects>
 </document>
