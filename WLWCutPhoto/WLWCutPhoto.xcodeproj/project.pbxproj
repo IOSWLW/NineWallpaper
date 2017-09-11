@@ -13,6 +13,8 @@
 		2A2027DA1F65105D0069C62F /* WLWHitPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2027D91F65105D0069C62F /* WLWHitPhoto.m */; };
 		2A2027DB1F65144D0069C62F /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2027D21F64F3590069C62F /* Mantle.framework */; };
 		2A2027DC1F65144D0069C62F /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2027D21F64F3590069C62F /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A2027E11F6520F30069C62F /* WLWPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2027DF1F6520F30069C62F /* WLWPhotoCell.m */; };
+		2A2027E21F6520F30069C62F /* WLWPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2027E01F6520F30069C62F /* WLWPhotoCell.xib */; };
 		2A60C8441F63A8D6008D4745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8431F63A8D6008D4745 /* main.m */; };
 		2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60C8461F63A8D6008D4745 /* AppDelegate.m */; };
 		2A60C84F1F63A8D6008D4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C84E1F63A8D6008D4745 /* Assets.xcassets */; };
@@ -75,6 +77,9 @@
 		2A2027D61F64F3E50069C62F /* WLWImagePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWImagePhoto.m; sourceTree = "<group>"; };
 		2A2027D81F65105D0069C62F /* WLWHitPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWHitPhoto.h; sourceTree = "<group>"; };
 		2A2027D91F65105D0069C62F /* WLWHitPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWHitPhoto.m; sourceTree = "<group>"; };
+		2A2027DE1F6520F30069C62F /* WLWPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWPhotoCell.h; sourceTree = "<group>"; };
+		2A2027DF1F6520F30069C62F /* WLWPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWPhotoCell.m; sourceTree = "<group>"; };
+		2A2027E01F6520F30069C62F /* WLWPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLWPhotoCell.xib; sourceTree = "<group>"; };
 		2A60C83F1F63A8D6008D4745 /* WLWCutPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLWCutPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A60C8431F63A8D6008D4745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A60C8451F63A8D6008D4745 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +223,9 @@
 				2A60C8991F6412A6008D4745 /* WLWNetImageVC.h */,
 				2A60C89A1F6412A6008D4745 /* WLWNetImageVC.m */,
 				2A60C89B1F6412A6008D4745 /* WLWNetImageVC.xib */,
+				2A2027DE1F6520F30069C62F /* WLWPhotoCell.h */,
+				2A2027DF1F6520F30069C62F /* WLWPhotoCell.m */,
+				2A2027E01F6520F30069C62F /* WLWPhotoCell.xib */,
 				2A60C84E1F63A8D6008D4745 /* Assets.xcassets */,
 				2A60C8861F63B960008D4745 /* LaunchScreen.xib */,
 				2A60C8531F63A8D6008D4745 /* Info.plist */,
@@ -402,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2027E21F6520F30069C62F /* WLWPhotoCell.xib in Resources */,
 				2A60C8851F63B825008D4745 /* WLWLaunchScreenVC.xib in Resources */,
 				2A60C8871F63B960008D4745 /* LaunchScreen.xib in Resources */,
 				2A60C84F1F63A8D6008D4745 /* Assets.xcassets in Resources */,
@@ -434,14 +443,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WLWCutPhoto/Pods-WLWCutPhoto-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/JHChainableAnimations/JHChainableAnimations.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JHChainableAnimations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shimmer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -493,6 +512,7 @@
 				2A60C8471F63A8D6008D4745 /* AppDelegate.m in Sources */,
 				2A60C9E51F6419FA008D4745 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				2A2022CB1F64DAB90069C62F /* WLWNetworkRequest.m in Sources */,
+				2A2027E11F6520F30069C62F /* WLWPhotoCell.m in Sources */,
 				2A2027DA1F65105D0069C62F /* WLWHitPhoto.m in Sources */,
 				2A60C8441F63A8D6008D4745 /* main.m in Sources */,
 				2A60C9E31F6419FA008D4745 /* HUTransitionAnimator.m in Sources */,
@@ -638,8 +658,10 @@
 				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 arm64 arm7s";
 			};
 			name = Debug;
 		};
@@ -657,8 +679,10 @@
 				INFOPLIST_FILE = WLWCutPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cutPhoto.wlw.com.WLWCutPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 arm64 arm7s";
 			};
 			name = Release;
 		};

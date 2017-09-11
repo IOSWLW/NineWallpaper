@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DE69D7E92101C5F09996690DBBDE3E2"
+               BlueprintIdentifier = "E911EBAFC732A5883B226E5A5FD4DE9F"
                BuildableName = "Pods_WLWCutPhoto.framework"
                BlueprintName = "Pods-WLWCutPhoto"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DE69D7E92101C5F09996690DBBDE3E2"
+            BlueprintIdentifier = "E911EBAFC732A5883B226E5A5FD4DE9F"
             BuildableName = "Pods_WLWCutPhoto.framework"
             BlueprintName = "Pods-WLWCutPhoto"
             ReferencedContainer = "container:Pods.xcodeproj">

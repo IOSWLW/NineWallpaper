@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLWNetImageVC">
             <connections>
+                <outlet property="tableView" destination="l6C-9I-etk" id="3F4-0Z-wCS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,15 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqP-yd-LY3">
-                    <rect key="frame" x="188" y="408" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l6C-9I-etk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="n9R-Jh-sIb"/>
+                        <outlet property="delegate" destination="-1" id="h8p-uu-hmU"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="l6C-9I-etk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DpD-Sa-rZ8"/>
+                <constraint firstAttribute="trailing" secondItem="l6C-9I-etk" secondAttribute="trailing" id="ab4-Yu-Ign"/>
+                <constraint firstAttribute="bottom" secondItem="l6C-9I-etk" secondAttribute="bottom" id="cdW-th-Zmo"/>
+                <constraint firstItem="l6C-9I-etk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mYp-uk-4XZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-126" y="1"/>
         </view>
     </objects>
 </document>

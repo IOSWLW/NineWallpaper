@@ -44,7 +44,7 @@
 }
 
 - (void)animationLogo {
-    _loagTopLayout.active = NO;
+//    _loagTopLayout.active = NO;
     JHChainableAnimator *animator = [[JHChainableAnimator alloc] initWithView:self.LogoView];
     animator.moveY(258).spring.thenAfter(2.0).bounce.animate(4);
 }

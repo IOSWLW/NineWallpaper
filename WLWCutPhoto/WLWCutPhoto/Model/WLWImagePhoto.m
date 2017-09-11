@@ -24,7 +24,7 @@
 }
 
 + (void)requestPhotosWithParams:(NSString *)params callback:(void(^)(WLWImagePhoto *photo,NSError *error))block {
-    NSString *path = [NSString stringWithFormat:@"https://pixabay.com/api/?key=5950348-3db6713241de0eed1bacdfb1b&lang=zh&%@",params];
+    NSString *path = [NSString stringWithFormat:@"https://pixabay.com/api/?key=5950348-3db6713241de0eed1bacdfb1b&lang=zh&q=wallpaper&min_with=375&%@",params];
     [[WLWNetworkRequest sharedNetwork] requestJSONDataWithPath:path header:nil params:nil methodType:GET callback:^(id data, NSError *error) {
         if (block) {
             WLWImagePhoto *images = [MTLJSONAdapter modelOfClass:[self class] fromJSONDictionary:data error:&error];
